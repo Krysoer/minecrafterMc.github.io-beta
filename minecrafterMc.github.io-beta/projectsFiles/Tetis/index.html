@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    body{
+      background: rgb(121,0,255);
+background: radial-gradient(circle, rgba(121,0,255,1) 0%, rgba(39,44,197,1) 16%, rgba(50,63,180,1) 30%, rgba(67,91,200,1) 50%, rgba(62,110,232,1) 63%, rgba(87,141,237,1) 78%, rgba(0,206,255,1) 100%);
+      color: white;
+    }
+    button{
+      background-color: #f3ff08;
+      color: black;
+      width: 130px;
+      height: 65px;
+    }
+    .tournament{
+   background-color: #f27272;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+  <img width="350" src="TetisLogo.png"><br><br><br>
+  <button onclick="startcustommode(-1,250,'classic',1,1,0,0)">Play Classic</button><br><br><br><br><br>
+  <button onclick="window.location.href = 'bonusselect.html'" style="background-color: #a103fc; color: white;">Bonus Modes</button><br><br><br><br><br>
+  <button style="background-color: #a103fc; color: white;">Mode Editor<br>(coming soon)</button>
+  </center>
+  <script>
+    function startcustommode(time,speed,name,lives,multi,pointpenalty,timepenalty)
+{
+  sessionStorage.setItem("time", time);
+  sessionStorage.setItem("speed", speed);
+  sessionStorage.setItem("name", name);
+  sessionStorage.setItem("lives", lives);
+  sessionStorage.setItem("pointmulti", multi);
+  sessionStorage.setItem("penaltypoint", pointpenalty);
+  sessionStorage.setItem("penaltytime", timepenalty);
+  window.location.href = '5min.html';
+}
+if (sessionStorage.getItem("colorid") == undefined)
+{
+  sessionStorage.setItem("colorid", 0);
+}
+if (sessionStorage.getItem("soundtoggle") == undefined)
+{
+  sessionStorage.setItem("soundtoggle", true);
+}
+if (sessionStorage.getItem("vibrationtoggle") == undefined)
+{
+  sessionStorage.setItem("vibrationtoggle", false);
+}
+  </script>
+</body>
+
+</html>

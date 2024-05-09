@@ -1,0 +1,252 @@
+@font-face {
+    font-family: pixel;
+    src: url(projectsFiles/Inscriber-main/Marksman.otf);
+  }
+
+body {
+    background: rgb(122,0,255);
+background: linear-gradient(90deg, rgba(122,0,255,1) 0%, rgba(0,205,255,1) 100%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "pixel", sans-serif;
+    color: #21376c;
+  }
+  h1 {
+    font-size: 70px;
+    font-family: "pixel", sans-serif;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  
+  /*h1 img {
+    margin-right: 15px;
+  }*/
+  
+  #nav {
+    width: 1144px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5fedeb;
+    list-style-type: none;
+    border-radius: 0px;
+    position: sticky;
+    top: 5px;
+    z-index: 20;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  #nav li {
+    padding: 20px;
+    display: inline-block;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #ee9ca7;
+    letter-spacing: 0.3px;
+  }
+  li span {
+    text-decoration: none;
+    color: #ee9ca7;
+    letter-spacing: 0.3px;
+    margin-left: auto;
+    font-size: 30px;
+  }
+  a {
+    z-index: 3;
+  }
+  li {
+    z-index: 2;
+  }
+  
+  #nav li:hover {
+    background-color: #000000;
+    transition-duration: 0.5s;
+  }
+  
+  #nav li:hover {
+    color: #000000;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+  
+  #kontener {
+    background-color: #0fdbe5;
+    width: 1160px;
+    border: 0px solid;
+    border-radius: 90px;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #kontener::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #newscontainer {
+    background-color: #bec46e;
+    width: 1160px;
+    border: 0px solid;
+    border-radius: 50000px;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    z-index: 1;
+  }
+  #newscontainer::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  h2 {
+    font-family: "pixel", sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  #projects {
+    text-align: center;
+  }
+  .dwie-kolumny {
+    width: 50%;
+    float: left;
+  }
+  .dwie-kolumny img {
+    width: 500px;
+    height: 280px;
+    object-fit: cover;
+    
+  }
+  
+  .dwie-kolumny img:hover {
+    opacity: 0.9;
+    transition-duration: 0.15s;
+  }
+  
+  #subnauticabelow{
+    background-image: url("https://cdn.glitch.global/efca0829-5891-4b62-ad21-01ffc783f8fe/subnautica%20below%20zero.webp?v=1658848177762");
+    
+  }
+  
+  #subnautica{
+    background-image: url("https://cdn.glitch.global/efca0829-5891-4b62-ad21-01ffc783f8fe/Subnautica.webp?v=1658848170891");
+  }
+  
+  #subnauticbelow,
+  #subnautica{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 280px;
+    background-size: cover;
+    margin-bottom: 10px;
+    position:relative;
+  }
+  
+  .info{
+    text-decoration: none;
+    background-color: #4bb7c9;
+    opacity: 0.9;
+    padding: 20px;
+    font-size: 30px;
+    bottom:0px;
+    left: 0px;
+    position: absolute;
+    color: #343924;
+   transition-duration: 0.5;
+}
+  
+  
+  .info:hover{
+    transition-duration: 0.5s;
+    background-color: #000000;
+    color: #1d3b4f;
+  }
+  
+  p{
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;  
+  }
+  
+  span{
+    color: gold;
+    margin-left: 10px;
+  }
+  
+  .screenshot{
+    width: 300px;
+    margin-right: 5px;
+    transition-duration: 0.2s;
+  }
+  
+  .screenshot:hover{
+
+    transform: scale(1.5);
+  }
+  
+  .screenshots{
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+  }
+  .play{
+    width: 300px;
+    transition:transform 0.15s;
+  }
+  .play:hover{
+    transform: scale(1.2);
+    transition: all .15s ease-in-out;
+
+  }
+  .games{
+    width: 300px;
+    transition:transform 0.15s;
+    border-radius: 10px;
+    border-width:15px;
+    border-top: solid 10px;
+    border-bottom: solid 10px;
+    border-left:solid 10px;
+    border-right: solid 10px;
+
+    border-color:#ee9ca7;
+  }
+  .games:hover{
+    transform: scale(1.2);
+    transition: all .15s ease-in-out;
+    
+  }
+  ul{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    list-style-position: inside;
+    padding-left: 40px;
+    margin: 0px;
+  padding: 0px;
+    
+  }
+  h3{
+    font-size: 40px;
+  }
+  ::marker{
+    margin: 0px;
+    padding:0px;
+  }
+  .aaa{
+    text-indent: -60px;
+  }
+  .aa{
+    font-size: 25px;
+  }
